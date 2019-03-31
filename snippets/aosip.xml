@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="github"
+           fetch="https://github.com/" />
+
+  <remote  name="gitlab"
+           fetch="https://gitlab.com/" />
+
+  <remote  name="aosip"
+           fetch="https://github.com/AOSiP"
+           revision="refs/heads/pie" />
+
+  <remote  name="devices"
+           fetch="https://github.com/AOSiP-Devices"
+           revision="refs/heads/pie" />
+
+  <!-- AOSP -->
+  <!-- Prebuilts -->
+  <project path="prebuilts/clang/host/linux-x86" name="platform_prebuilts_clang_host_linux-x86" clone-depth="1" remote="aosip" />
+
+  <!-- Vendor -->
+  <project path="vendor/aosip" name="platform_vendor_aosip" remote="aosip" />
+</manifest>
+
